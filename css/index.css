@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+:root {
+  --textbook_color: #0ad0f4;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  letter-spacing: 1.5px;
+}
+.user_registration {
+  min-height: 80vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 40px;
+}
+.user_registration .user_form {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.user_form .user_info {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #ccc;
+  margin-top: 30px;
+}
+.user_info > * {
+  margin-bottom: 15px;
+}
+.input_group {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input_group > input {
+  height: 100%;
+  width: 85%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+.input_group > input[type="text"] {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.input_group > button,
+#reset_category {
+  height: 35px;
+  width: max-content;
+  border: none;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: var(--textbook_color);
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  padding: 3px 10px;
+  font-size: 11px;
+}
+#reset_category {
+  margin-top: 10px;
+}
+.user_registration > img {
+  height: 80px;
+  width: 80px;
+}
+.user_form > p {
+  color: #777;
+}
+.user_form .categories_info {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.categories_info .categories {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.categories > span {
+  height: 40px;
+  width: 45%;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  border: 2px solid aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+h1 {
+  color: var(--textbook_color);
+}

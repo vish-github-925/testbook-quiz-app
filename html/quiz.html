@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/quiz.css" />
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container hidden">
+      <div class="info">
+        <h3 class="category_name"></h3>
+      </div>
+
+      <div class="time_and_score_box">
+        <div>
+          Timer:
+          <span class="timer"></span>
+        </div>
+        <p>SCORE: <span class="score"></span></p>
+      </div>
+      <div class="question_no_circle">
+        <b><p class="question_no_info"></p></b>
+      </div>
+      <div class="question_box">
+        <p class="question"></p>
+      </div>
+      <div class="options_box">
+        <span class="opt1"></span>
+        <span class="opt2"></span>
+        <span class="opt3"></span>
+        <span class="opt4"></span>
+      </div>
+      <button class="next_question">Next Question</button>
+      <p class="user_name"></p>
+      <button class="home_page"><a href="../index.html">Go To Home</a></button>
+    </div>
+    <div class="rules_container">
+      <h1>Rules of quiz</h1>
+      <p>1. You will have 10 seconds to answer each question.</p>
+      <p>
+        2. The timer for each question will be displayed at the left corner.
+      </p>
+      <p>3. You can see your entered name at the right bottom corner.</p>
+      <p>
+        4. Click <strong>Continue</strong> to start the <strong>Quiz</strong>
+      </p>
+      <p>5. Click <strong>Go To Home</strong> to go to the starting page.</p>
+      <div class="rules_buttons">
+        <button class="back">Go To Home</button>
+        <button class="continue">Continue</button>
+      </div>
+    </div>
+    <div class="loading_container hidden">
+      <h1>Loading...</h1>
+    </div>
+    <!-- JS -->
+    <script src="../js/quiz.js" type="module"></script>
+  </body>
+</html>
