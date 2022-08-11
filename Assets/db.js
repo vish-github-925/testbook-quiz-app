@@ -181,10 +181,10 @@ export const PIPES_AND_CISTERNS = [
     question:
       "Two pipes A and B can fill a tank in 20 and 30 minutes respectively. If both the pipes are used together, then how long will it take to fill the tank?",
     options: {
-      a: "12  mins",
-      b: "15  mins",
-      c: "25  mins",
-      d: "30  mins",
+      a: "12 mins",
+      b: "15 mins",
+      c: "25 mins",
+      d: "30 mins",
     },
     answer: "12 mins",
   },

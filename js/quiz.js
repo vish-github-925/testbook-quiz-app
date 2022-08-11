@@ -28,7 +28,7 @@ let attempted_questions = 0;
 let correct_answers = 0;
 let wrong_answers = 0;
 let selectedAnswer = "";
-let time = 10;
+let time = 29;
 let questionTimer;
 let totalQuestions;
 let option;
@@ -113,8 +113,8 @@ const timerFunction = () => {
     clearInterval(questionTimer);
   }
   if (time < 1) {
-    totalTimeTaken = totalTimeTaken + (10 - time);
-    time = 10;
+    totalTimeTaken = totalTimeTaken + (30 - time);
+    time = 29;
     questionIndex++;
     if (selectedAnswer === "") {
       attempted_questions--;
@@ -186,15 +186,15 @@ opt4Tag.addEventListener("click", function () {
 });
 
 nextQuestion.addEventListener("click", () => {
-  totalTimeTaken = totalTimeTaken + (10 - time);
+  totalTimeTaken = totalTimeTaken + (30 - time);
   OptionsReset(totalOptions);
   if (selectedAnswer === "") {
     attempted_questions--;
   }
-  timerTag.textContent = 10;
+  timerTag.textContent = 30;
   timerTag.style.color = "black";
   timerTag.style.transform = "scale(1)";
-  time = 10;
+  time = 29;
   clearInterval(questionTimer);
   counter();
   if (selectedAnswer === selectedCategory[questionIndex].answer) {
