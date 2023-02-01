@@ -38,7 +38,7 @@ userNameTag.textContent = userName;
 
 // rules buttons event listener
 function getQuizQuestions(option) {
-  fetch(`https://secure-basin-25900.herokuapp.com/${option}`)
+  fetch(`https://testbook-quiz-app-backend.onrender.com/${option}`)
     .then((res) => res.json())
     .then((data) => {
       selectedCategory = data;
